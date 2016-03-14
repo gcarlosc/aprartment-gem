@@ -6,8 +6,8 @@ class SubdomainConstraint
 end
 
 Rails.application.routes.draw do
-  # constraints SubdomainConstraint do
+  constraints SubdomainConstraint do
     resources :projects
-  # end
+  end
   resources :users
 end
