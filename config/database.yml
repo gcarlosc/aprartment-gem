@@ -1,0 +1,36 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  encoding: utf8
+  username: rails
+  password: giancarlosolis
+
+test:
+  <<: *default
+  database: centris_test
+
+development:
+  <<: *default
+  database: centris_dev
+
+production:
+  <<: *default
+  database: centris_prod
+default: &default
+  adapter: postgresql
+  host: localhost
+  encoding: utf8
+  username: rails
+  password: giancarlosolis
+
+test:
+  <<: *default
+  database: apartment_test
+
+development:
+  <<: *default
+  database: apartment_dev
+
+production:
+  <<: *default
+  database: apartment_prod
